@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "level-elevator-748",
+  schema: "analytics_262420034",
+  name: "events_*",
+  description: "Tatvic's GA4 sharded tables for view 262420034"
+}

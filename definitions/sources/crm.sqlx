@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "level-elevator-748",
+  schema: "instant_cdp_sources",
+  name: "leadsquared_leads",
+  description: "CRM actual+dummy data for the CLTV use-case"
+}

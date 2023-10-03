@@ -1,0 +1,22 @@
+config {
+  type: "view",
+  schema: "staging",
+  description: "Cleaned and mapped version of CRM",
+  tags: ["staging"]
+}
+
+js {
+  const schema = require('includes/mapped_schema.json');
+
+  // Generate a SQL statement for all mappings
+  const sqlStatement = schema.mapping
+    .map(mapping => {
+      const leadsquaredSchema = mapping.leadsquared_schema;
+      const unifiedSchema = mapping.unified_schema;
+
+      return `${leadsquaredSchema} AS ${unifiedSchema}`;
+    })
+    .join(',\n');
+}
+
+select distinct ${sqlStatement} from ${ref("leadsquared_leads")}
