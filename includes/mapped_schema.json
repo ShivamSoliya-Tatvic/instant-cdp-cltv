@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-2020-12/schema#",
     "$id": "https://example.com/leadsquared-to-unified-schema-mapping.schema.json",
     "title": "LeadSquared to Unified Schema Mapping",
-    "description": "This schema defines the mapping of fields between the LeadSquared schema and the Unified Schema.",
+    "description": "This schema defines the mapping of fields between the LeadSquared and the Unified Schema.",
     "mapping": [
       {
         "leadsquared_schema": "CreatedOn",
